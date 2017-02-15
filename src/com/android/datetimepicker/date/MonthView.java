@@ -587,6 +587,7 @@ public abstract class MonthView extends View {
         int j = findDayOffset();
         for (int dayNumber = 1; dayNumber <= mNumCells; dayNumber++) {
             final int x = (int)((2 * j + 1) * dayWidthHalf + mEdgePadding);
+
             int yRelativeToDay = (mRowHeight + mMiniDayNumberTextSize) / 2 - mDaySeparatorWidth;
 
             final int startX = (int)(x - dayWidthHalf);
